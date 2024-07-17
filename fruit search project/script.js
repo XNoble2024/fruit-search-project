@@ -10,9 +10,9 @@ function search(str) {
 function searchHandler(e) {
 	const inputValue = e.target.value.toLowerCase();//lowercase to match fruit stated above
 
-	if (inputValue !== "") {//make sure there is some value
+	if (inputValue.length) {//make sure there is some value
 		let results = search(inputValue);
-		if (results.length === 0) {//this will work even if there is no result available
+		if (results.length === 0) {//this will return the input if no results were found
 			inputFruit.value = "";
 			listSuggestions.innerHTML = "";
 		}
@@ -44,6 +44,7 @@ function useSuggestion(e) {
 		suggestions.style.display = 'none';
 	}
 }
+
 
 input.addEventListener('keyup', searchHandler);
 suggestions.addEventListener('click', useSuggestion);

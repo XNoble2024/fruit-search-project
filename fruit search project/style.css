@@ -1,9 +1,11 @@
 * {
-  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :focus {
- /* TODO */
+ 
 }
 
 body {
@@ -12,36 +14,53 @@ body {
 }
 
 input {
-  
+width: 600px;
+height: 50px;
+background: transparent;
+border: 0;
+outline: 0;
+font-size: 18px;
 }
 
 .search-container {
- 
+ width: 600px;
+ margin: 200px auto 0;
 }
 .search-container input,
 .search-container .suggestions {
-  /* TODO */
+  background-color: white;
+  opacity: 80%;
 }
 .search-container input {
- /* TODO */
+ 
+  
 }
 .search-container .suggestions {
-   /* TODO */
+  
+  
+}
+.suggestions{
+
 }
 
+.suggestion {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  outline-width: 5px;
+}
 ul {
-  /* TODO */
+  list-style-type: none;
+  
 }
 ul.has-suggestions {
-  /* TODO */
+
 }
 ul li {
-  /* TODO */
+
+
 }
 ul li:hover {
-  /* TODO */
+  background-color: lightblue;
 }
 
-input {
-   /* TODO */
-}
